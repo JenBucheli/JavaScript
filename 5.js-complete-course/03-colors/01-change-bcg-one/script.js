@@ -15,7 +15,7 @@ let btnGreen=document.getElementById("green");
 let btnYellow=document.getElementById("yellow");
 let btnBlue=document.getElementById("blue");
 
-    btnRed.addEventListener("click",()=>{
+    let btnRed.addEventListener("click",()=>{
     document.body.style.background="red";
     })
     btnGreen.addEventListener("click",()=>{

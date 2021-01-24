@@ -11,18 +11,25 @@
 
 (function() {
 
-    var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
+    const fruits = [
+        "pomme \n",
+        "poire \n",
+        "fraise \n",
+        "tomate \n",
+        "orange  \n",
+        "mandarine \n",
+        "durian \n",
+        "pêche \n",
+        "raisin \n",
+        "cerise \n",
     ];
+    let start= fruits.shift() && fruits.unshift("banana, \n");
+    let end=fruits.pop() && fruits.push("kiwi");
+
+    document.getElementById("run").addEventListener("click",()=> {
+        alert(fruits)
+    })
+
 
     // your code here
 

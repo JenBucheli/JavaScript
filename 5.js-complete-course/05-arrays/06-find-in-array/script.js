@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    let people = [
         {
             firstname: "Bradford",
             lastname: "Coldbath",
@@ -89,6 +89,16 @@
         },
     ];
 
-    // your code here
+    function target(index) {
+        if (index.firstname === "Jean" && index.lastname === "Dupont")
+            return index;
+    }
+
+    console.log(people.find(target).email);
+    console.log("Index number is: " + people.indexOf(people.find(target)));
+
+
 
 })();
+
+

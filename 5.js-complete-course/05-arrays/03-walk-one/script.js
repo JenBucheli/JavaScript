@@ -10,21 +10,27 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    var fruits = [
+    document.getElementById("run").addEventListener("click", function() {
+    let fruits = [
         "apple",
         "pear",
         "raspberry",
-        "tomatos",
+        "tomatoes",
         "kiwi",
         "banana",
         "orange",
         "mandarin",
         "durian",
-        "peache",
-        "grap",
+        "peach",
+        "grapes",
         "cherry",
     ];
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+
+        }
+    })
+
 
     // your code here
 
