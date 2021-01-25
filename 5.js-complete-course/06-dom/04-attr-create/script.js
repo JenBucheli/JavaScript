@@ -10,6 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("source").getAttribute("data-image");
+
+    var image = document.createElement("img")
+        image.setAttribute("src","http://www.randomkittengenerator.com/cats/rotator.php")
+
+    var figure = document.getElementById("target")
+        figure.appendChild(image);
+
+    document.getElementById("source").remove();
 
     // your code here
 

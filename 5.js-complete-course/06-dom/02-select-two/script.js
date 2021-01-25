@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.querySelector(".material >p").innerHTML="Owned"
 
     // your code here
 
