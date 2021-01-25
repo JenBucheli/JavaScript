@@ -10,8 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function () {
 
-    var fruits = [
+        function removedoble(arr) {
+            return arr.filter((value, index) => (arr.indexOf(value) === index
+            ));
+        }
+
+    const fruits = [
         "cerise",
         "durian",
         "pomme",
@@ -28,6 +34,9 @@
         "cerise",
     ];
 
-    // your code here
+        console.log(removedoble(fruits))
 
+
+    // your code here
+    })
 })();

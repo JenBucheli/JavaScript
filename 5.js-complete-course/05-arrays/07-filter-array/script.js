@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function() {
 
     var people = [
         {
@@ -91,4 +92,9 @@
 
     // your code here
 
+        var older= people.filter(function (olderThan) {
+            return olderThan.age > 18;
+        })
+        console.log(older);
+    })
 })();

@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function () {
 
     var people = [
         {
@@ -88,6 +89,14 @@
             age: 81,
         },
     ];
+
+    var sum= people.reduce((accumulator, currentValue)=> {
+        return accumulator+currentValue.age;
+    },0);
+
+    console.log(sum);
+
+    })
 
     // your code here
 
