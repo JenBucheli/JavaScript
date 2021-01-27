@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+    //add HTML's button to JS
+    document.getElementById("run").addEventListener("click", function (){
+
+//add pass from HTML to JS
+        let pass1= document.getElementById("pass-one");
+        let pass2=document.getElementById("pass-two");
+
+        //IMPORTANT add .value to get the context of the input!!
+        if (pass1.value===pass2.value) {
+            alert("WELCOME!")
+        }
+        else {
+            //could use classList as well
+            //Difference .classname is safe when we won't use any other classes, otherwise it'll swipe the previous classes.
+            //classList can add or remove a class without affecting any other classes the element may have
+
+            pass1.className+= "error";
+            pass2.className+= "error";
+        }
+    })
 
 })();

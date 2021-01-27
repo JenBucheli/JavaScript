@@ -11,6 +11,21 @@
 
 (function() {
 
-    // your code here
+    let emoji= document.getElementsByTagName("img")[0];
+    //we use index 0 because the images to work with, are all inside the same "img tag"
+
+    let hover= emoji.getAttribute("data-hover");
+
+    let notHover= emoji.getAttribute("src");
+
+
+
+    emoji.addEventListener("mouseover", function () {
+        emoji.setAttribute ("src", hover)
+    })
+
+    emoji.addEventListener("mouseleave", function () {
+        emoji.setAttribute ("src", notHover)
+    })
 
 })();

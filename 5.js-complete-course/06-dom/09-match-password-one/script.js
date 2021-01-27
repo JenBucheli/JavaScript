@@ -11,6 +11,24 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function (){
+
+    let pass1=document.getElementById("pass-one")
+
+   let pass2=document.getElementById("pass-two")
+// to review "check two conditions if statement javaScrip, to avoid that pass activates without any text"
+    if ((pass1.value===pass2.value)){
+       alert("welcome!");
+       return true;
+    }
+    else{
+        pass1.style.borderColor="red";
+        pass2.style.borderColor="red";
+
+        return false;
+    }
+
+
+    })
 
 })();

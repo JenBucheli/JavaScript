@@ -11,6 +11,24 @@
 
 (function() {
 
-    // your code here
+    let table=document.createElement("table");
+
+
+    document.getElementById("target").appendChild(table);
+    //appendChild puts the element I create (tables) inside the existing element (div, target)
+    //tr and td I have to put them inside the table , not div!!
+
+    for (let r=0;r<10;r++)
+    {
+        //add rows inside table
+        table.appendChild(document.createElement("tr"));
+
+        //for(let c=0;c<clm;c++)
+        //table+="/tr";
+    }
+
+
+
+
 
 })();

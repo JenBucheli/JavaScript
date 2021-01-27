@@ -15,6 +15,7 @@
     var image = document.createElement("img")
         image.setAttribute("src","http://www.randomkittengenerator.com/cats/rotator.php")
 
+
     var figure = document.getElementById("target")
         figure.appendChild(image);
 
