@@ -24,13 +24,6 @@
             {
                 //find a way to print ok once I have 8 characters with numbers and letters
                 ok.innerText = "ok";
-
         }
-
-
 })
-
-
-
-
 })();
