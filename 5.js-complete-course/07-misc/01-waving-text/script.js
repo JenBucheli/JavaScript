@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    // add text inside target from HTML
+    let text= document.getElementById("target")
+    //Because we want to edit this text we use .innerText
+    let newText= text.innerText
+
+    //separate "target" text
+    let splitText= newText.split("");
+
+
+
 
 })();

@@ -10,13 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
-let btnRed= document.getElementById("red");
+let btnRed=document.getElementById("red")
 let btnGreen=document.getElementById("green");
 let btnYellow=document.getElementById("yellow");
 let btnBlue=document.getElementById("blue");
 
-    let btnRed.addEventListener("click",()=>{
-    document.body.style.background="red";
+
+    btnRed.addEventListener("click", ()=>{
+        document.body.style.background="red";
     })
     btnGreen.addEventListener("click",()=>{
         document.body.style.background="green";
@@ -27,6 +28,7 @@ let btnBlue=document.getElementById("blue");
     btnBlue.addEventListener("click",()=>{
         document.body.style.background="blue";
     })
+
     // your code here
 
 })();

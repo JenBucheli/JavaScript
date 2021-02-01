@@ -9,8 +9,23 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+    let text= document.getElementById("target").innerText;
+    //let text= "Hello friends and family"
+    let i= 0;
+    let speed=50;
+    target.innerText="";
+    //let splitText= text.split()
 
-})();
+
+    function moving (){
+
+
+        if (i < text.length) {
+            target.innerText += text.charAt(i);
+            i++;
+            setTimeout(moving, speed);
+        }
+
+    }
+moving();

@@ -14,7 +14,8 @@
     document.getElementById("run").addEventListener("click", function () {
 
         let nowYear = new Date().getFullYear();
-        let nowMonth = new Date().getMonth();
+
+        let nowMonth = new Date().getMonth()+1; //+1 they count the months from zero so plus one was needed
         let nowToday = new Date().getDay();
 
         let birthYear = document.getElementById("dob-year").value;
@@ -23,7 +24,7 @@
 
         let age = nowYear - birthYear;
 
-        if ( nowMonth +1 < birthMonth || (nowMonth +1 === birthMonth && nowToday < birthDay))
+        if ( nowMonth < birthMonth || (nowMonth  === birthMonth && nowToday < birthDay))
             age--;
 
         alert("You are " + age + " years old.");

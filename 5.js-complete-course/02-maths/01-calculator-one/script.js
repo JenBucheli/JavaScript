@@ -17,11 +17,11 @@
         // perform an addition
         first = document.getElementById("op-one").value;
         second = document.getElementById("op-two").value;
-        alert(parseInt(first) + parseInt(second));
-    })
+        //console.log(typeof first);
+     })
 
-    document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
+    document.getElementById("subtraction").addEventListener("click", function() {
+        // perform a subtraction
         first = document.getElementById("op-one").value;
         second = document.getElementById("op-two").value;
         alert(parseInt(first) - parseInt(second));
@@ -31,7 +31,7 @@
         // perform an multiplication
         first = document.getElementById("op-one").value;
         second = document.getElementById("op-two").value;
-        alert(parseInt(first) * parseInt(second));
+        alert(first * second);
     });
 
     document.getElementById("division").addEventListener("click", function() {

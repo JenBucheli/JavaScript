@@ -17,6 +17,8 @@
     btnRun.addEventListener("click",()=>{
         let color= "#";
         color+=Math.random().toString(16).slice(2,8);
+        // to String converts stuff to string, it represents the Hexadecimal value for colors.
+
         document.body.style.background=color;
     })
 

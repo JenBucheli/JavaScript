@@ -10,12 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
-    let input=document.getElementById("color");
+
     let btnRun=document.getElementById("run");
 
+
     btnRun.addEventListener("click",()=>{
-        let colors=input.value
-        document.body.style.background=colors;
+
+        let inputColor=document.getElementById("color").value;
+
+        document.body.style.background=inputColor;
     })
 
 })();

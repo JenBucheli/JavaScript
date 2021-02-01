@@ -16,8 +16,13 @@
     document.getElementById("run").addEventListener("click", function() {
 
 let numbers=[ 2, 4, 14, 10, 90, 23, 16];
+
 alert(numbers.sort(function (a,b){
         return a-b}));
+
+        //a-b from smallest to bigger
+
+        //b-a bigger to smaller.
 
 
 });

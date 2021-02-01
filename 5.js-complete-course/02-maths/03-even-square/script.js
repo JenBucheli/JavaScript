@@ -17,15 +17,21 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-        var n=21;
-        var msg="";
-        var res="0";
+      let squareNumbers= [];
 
-        for( var i= 1; i <= n; i++) {
-            res = i * i;
-            msg = msg + " " + i + " * " + i + " = " + res + "\n";
+        for (let i= 1; i<=21;i++) {
+            // if I get the square root of i (numbers 1-21), figure out if it's a whole number.
+            //% gives me the rest of the division to identify "whole" numbers.
+            if (Math.sqrt(i)%1===0) // is divided by zero because we are dividing numbers between 1-21 by 1 to avoid that the residual is a decimal.
+                {
+                // put the founded number in the array
+                squareNumbers.push(i);   //takes an argument
+            }
+
+
         }
-        alert(msg);
+        //to then show them in the array.
+        alert(squareNumbers);
 
 
     });

@@ -20,7 +20,9 @@ do{
 
     positive=confirm(age+'\n'+gender+'\n'+town);
 }
-while (positive===false);
+while (!positive); //return process of do and then check if positive is fall then loop of do!
+
+//how is the while loop working here?
 
 
 

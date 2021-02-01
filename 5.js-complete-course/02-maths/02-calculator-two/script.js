@@ -20,7 +20,7 @@
         switch (operation){
             case "addition": alert(parseInt(first)+parseInt(second));
             break;
-            case "substraction":alert(parseInt(first)-parseInt(second));
+            case "subtraction":alert(parseInt(first)-parseInt(second));
             break;
             case "multiplication":alert(parseInt(first)*parseInt(second));
             break;
@@ -28,7 +28,7 @@
         }
 
     };
-
+// it was there
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
             performOperation($btn.id);
