@@ -7,20 +7,23 @@
  */
 
 (() => {
-    const setupIntervalMessage = (label, delay) => {
+    function setupIntervalMessage(label, delay) {
         let count = 0;
-
         return setInterval(() => console.log(`${label}:`, ++count), delay);
-    };
+    }
 
     let intervals = [];
-
     document.getElementById("run").addEventListener("click", () => {
         if (intervals.length) {
-            intervals = intervals.filter(clearInterval);
+            intervals.forEach(interval => {
+                clearInterval(interval);
+            });
             console.clear();
         }
 
+        // This is the important part!
+        //look how all the lines below are sequential, but they will not trigger in the same order in the browser!
+        // this is the concept of "asynchronicity", each line does not have to wait until the previous line of code has been executed.
         intervals.push(setupIntervalMessage("one", 1000));
         intervals.push(setupIntervalMessage("two", 1333));
         intervals.push(setupIntervalMessage("three", 2500));
